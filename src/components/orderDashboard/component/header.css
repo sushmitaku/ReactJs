@@ -1,0 +1,23 @@
+.boarder
+{
+    border-style: none;
+}
+.admin
+{
+    border-style: none;
+    border-color: transparent;
+    color: blue;
+}
+.headerLogo
+{
+Width:50px;
+height:30px;
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+.headerLogo
+{
+Width:60px;
+height:40px;
+}
+}

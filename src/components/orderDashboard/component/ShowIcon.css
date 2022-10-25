@@ -1,0 +1,13 @@
+.Icon
+{
+Width:50px;
+height:30px;
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+.Icon
+{
+Width:60px;
+height:40px;
+}
+}

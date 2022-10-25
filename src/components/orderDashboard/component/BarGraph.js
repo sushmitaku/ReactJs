@@ -32,25 +32,36 @@ const BarGraph = () => {
   console.warn("total length", totalLength);
 
   //console.warn(CollectData)
-let layoutWidth=window.innerWidth>550?700:window.innerWidth;
+  //let layoutWidth=window.innerWidth>550?550:window.innerWidth;
+  //let layoutHeight=window.innerHeight;
   return (
-        <Plot
-          data={[
-            {
-              options: {
-                scales: {
-                  x: { min: 0, max: totalLength, ticks: { stepSize: 1 } },
-                },
-              },
-              orientation: "h",
-              type: "bar",
-              x: id,
-              y: name,
-            },
-          ]}
-          // layout={ {width: layoutWidth, height: "auto", title: 'A Fancy Plot'} }
-        />
+    <div>
+      <Plot
+      
+        data={[
+          {
+            // options: {
+            //   scales: {
+            //     x: { min: 0, max: totalLength, ticks: {stepSize:1} },
+            //   },
+            // },
+            orientation: "h",
+            type: "bar",
+             x: id,
+            y: name,
 
+            // layout: {
+            //   x: {
+            //     range: [1, totalLength],
+            //     type: "number",
+            //   },
+            // },
+          },
+        ]}
+        
+      />
+      
+    </div>
   );
 };
 export default BarGraph;
